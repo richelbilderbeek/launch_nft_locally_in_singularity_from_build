@@ -1,4 +1,4 @@
-# Check if the build works
+# Check if the build works without changing anything
 name: Check build without changing anything
 
 on:
