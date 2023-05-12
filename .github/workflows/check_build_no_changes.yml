@@ -22,7 +22,9 @@ jobs:
 
       - run: ./997_build.sh
 
-      - run: ./998_run.sh
+      - run: sudo docker image ls
+
+      # - run: ./998_run.sh
 
 
 
