@@ -1,5 +1,5 @@
 # Check if the build works
-name: Check links
+name: Check build
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 
 jobs:
-  check_links:
+  check_build:
 
     runs-on: ubuntu-latest
     env:
