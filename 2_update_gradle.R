@@ -3,12 +3,12 @@
 # From https://stackoverflow.com/a/64637310
 target_zipfilename <- "gradle-6.3-all.zip"
 
-if (basename(getwd()) != "issue_6") {
+if (basename(getwd()) != "nextflow_tower_builder") {
   stop(
     "Please run '2_update_gradle.sh' or '2_update_gradle.R' ",
-    "in the 'issue_6' folder, e.g. from\n",
+    "in the 'nextflow_tower_builder' folder, e.g. from\n",
     "\n",
-    "  /home/username/nbis_data_experiment_private/issue_6"
+    "  /home/username/nbis_data_experiment_private/nextflow_tower_builder"
   )
 }
 

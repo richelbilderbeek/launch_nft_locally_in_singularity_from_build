@@ -1,11 +1,11 @@
 #
 #
-if (basename(getwd()) != "issue_6") {
+if (basename(getwd()) != "nextflow_tower_builder") {
   stop(
     "Please run '3_update_gradle_build.sh' or '3_update_gradle_build.R' ",
-    "in the 'issue_6' folder, e.g. from\n",
+    "in the 'nextflow_tower_builder' folder, e.g. from\n",
     "\n",
-    "  /home/username/nbis_data_experiment_private/issue_6"
+    "  /home/username/nextflow_tower_builder"
   )
 }
 
