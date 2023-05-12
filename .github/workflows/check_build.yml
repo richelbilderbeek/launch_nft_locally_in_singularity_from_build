@@ -18,19 +18,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - shell: ./1_clone_repo.sh
+      - run: ./1_clone_repo.sh
 
-      - shell: ./2_update_gradle.sh
+      - run: ./2_update_gradle.sh
 
-      - shell: ./3_update_gradle_build.sh
+      - run: ./3_update_gradle_build.sh
 
-      - shell: ./998_build.sh
+      - run: ./998_build.sh
 
-      - shell: ./4_update_backend_dockerfile.sh
+      - run: ./4_update_backend_dockerfile.sh
 
-      - shell: ./998_build.sh
+      - run: ./998_build.sh
 
-      - shell: ./999_run.sh
+      - run: ./999_run.sh
 
 
 
