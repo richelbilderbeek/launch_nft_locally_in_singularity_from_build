@@ -1,0 +1,38 @@
+# Check if the build works
+name: Check links
+
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: "0 0 1 * *"
+
+
+jobs:
+  check_links:
+
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - shell: ./1_clone_repo.sh
+
+      - shell: ./2_update_gradle.sh
+
+      - shell: ./3_update_gradle_build.sh
+
+      - shell: ./998_build.sh
+
+      - shell: ./4_update_backend_dockerfile.sh
+
+      - shell: ./998_build.sh
+
+      - shell: ./999_run.sh
+
+
+
+
+
