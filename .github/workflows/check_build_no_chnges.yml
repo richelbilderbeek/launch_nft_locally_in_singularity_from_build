@@ -1,0 +1,30 @@
+# Check if the build works
+name: Check build without changing anything
+
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: "0 0 1 * *"
+
+
+jobs:
+  check_build_no_changes:
+
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: ./1_clone_repo.sh
+
+      - run: ./998_build.sh
+
+      - run: ./999_run.sh
+
+
+
+
+
