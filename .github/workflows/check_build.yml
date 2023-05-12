@@ -31,8 +31,6 @@ jobs:
 
       - run: ./3_update_gradle_build.sh
 
-      - run: ./998_build.sh
-
       - run: ./4_update_backend_dockerfile.sh
 
       - run: ./997_build.sh
