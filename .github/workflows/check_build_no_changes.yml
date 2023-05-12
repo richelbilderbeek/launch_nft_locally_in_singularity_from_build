@@ -20,9 +20,9 @@ jobs:
 
       - run: ./1_clone_repo.sh
 
-      - run: ./998_build.sh
+      - run: ./997_build.sh
 
-      - run: ./999_run.sh
+      - run: ./998_run.sh
 
 
 
