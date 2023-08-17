@@ -1,9 +1,9 @@
 #
 #
-if (basename(getwd()) != "run_nft_locally_in_singularity_from_build") {
+if (basename(getwd()) != "launch_nft_locally_in_singularity_from_build") {
   stop(
     "Please run '3_update_gradle_build.sh' or '3_update_gradle_build.R' ",
-    "in the 'run_nft_locally_in_singularity_from_build'"
+    "in the 'launch_nft_locally_in_singularity_from_build'"
   )
 }
 

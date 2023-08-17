@@ -1,2 +1,5 @@
 #!/bin/bash
-cd nf-tower && sudo make build && cd -
+(
+  cd nf-tower || exit 2
+  make build
+)

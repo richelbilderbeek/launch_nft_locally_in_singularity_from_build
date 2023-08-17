@@ -1,2 +1,5 @@
 #!/bin/bash
-cd nf-tower && sudo make run && cd -
+(
+  cd nf-tower 
+  make run
+)

@@ -3,10 +3,10 @@
 # From https://stackoverflow.com/a/64637310
 target_zipfilename <- "gradle-6.3-all.zip"
 
-if (basename(getwd()) != "run_nft_locally_in_singularity_from_build") {
+if (basename(getwd()) != "launch_nft_locally_in_singularity_from_build") {
   stop(
     "Please run '2_update_gradle.sh' or '2_update_gradle.R' ",
-    "in the 'run_nft_locally_in_singularity_from_build' folder"
+    "in the 'launch_nft_locally_in_singularity_from_build' folder"
   )
 }
 
