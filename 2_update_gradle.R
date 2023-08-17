@@ -3,12 +3,10 @@
 # From https://stackoverflow.com/a/64637310
 target_zipfilename <- "gradle-6.3-all.zip"
 
-if (basename(getwd()) != "nextflow_tower_builder") {
+if (basename(getwd()) != "run_nft_locally_in_singularity_from_build") {
   stop(
     "Please run '2_update_gradle.sh' or '2_update_gradle.R' ",
-    "in the 'nextflow_tower_builder' folder, e.g. from\n",
-    "\n",
-    "  /home/username/nbis_data_experiment_private/nextflow_tower_builder"
+    "in the 'run_nft_locally_in_singularity_from_build' folder"
   )
 }
 
