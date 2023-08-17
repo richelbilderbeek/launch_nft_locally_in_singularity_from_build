@@ -1,11 +1,9 @@
 #
 #
-if (basename(getwd()) != "nextflow_tower_builder") {
+if (basename(getwd()) != "run_nft_locally_in_singularity_from_build") {
   stop(
     "Please run '3_update_gradle_build.sh' or '3_update_gradle_build.R' ",
-    "in the 'nextflow_tower_builder' folder, e.g. from\n",
-    "\n",
-    "  /home/username/nbis_data_experiment_private/nextflow_tower_builder"
+    "in the 'run_nft_locally_in_singularity_from_build'"
   )
 }
 
