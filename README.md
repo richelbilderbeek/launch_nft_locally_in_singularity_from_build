@@ -277,3 +277,17 @@ Step 12/12 : COPY --from=builder /usr/src/app/dist/tower-web/ .
 Successfully built 5ac08a529a09
 Successfully tagged tower-web:latest
 ```
+
+## docker-compose: No such file or directory
+
+```
+$ make run
+docker-compose up
+make: docker-compose: No such file or directory
+```
+
+Solution:
+
+```
+sudo apt  install docker-compose
+```
