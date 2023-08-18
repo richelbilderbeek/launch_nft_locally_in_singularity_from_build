@@ -8,6 +8,17 @@ Goal is to run the Nextflow Tower community edition locally,
 as a Singularity container,
 by building the code from [nf-tower](https://github.com/seqeralabs/nf-tower).
 
+## 1. Clone the NFT repo
+
+```
+./clone_repo.sh
+```
+
+## 2. Build the NFT
+
+```
+./build_nft.sh
+```
 
 ## Success
 
