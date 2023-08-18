@@ -306,3 +306,8 @@ $ make run
 backend_1   | Error: A JNI error has occurred, please check your installation and try again
 backend_1   | Exception in thread "main" java.lang.UnsupportedClassVersionError: io/seqera/tower/Application has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
 ```
+
+
+## Links
+
+ * [Launch NFT in a Singularity container starting from a Dockerfile](https://github.com/richelbilderbeek/launch_nft_locally_in_singularity_from_dockerfile)
