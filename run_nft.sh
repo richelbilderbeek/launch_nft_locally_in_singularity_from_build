@@ -39,6 +39,15 @@ source ${filename}
 echo "JAVA_HOME: ${JAVA_HOME}"
 echo "JAVA_CMD: ${JAVA_CMD}"
 
+if [ -z ${JAVA_HOME} ]
+then
+  echo "ERROR:  'JAVA_HOME' not found"
+  echo " "
+  echo "Tip: run:"
+  echo " "
+  echo "sudo apt-get install openjdk-19-jdk-headless"
+  exit 42
+fi
 
 (
   cd nf-tower || exit 2
