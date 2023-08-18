@@ -25,7 +25,9 @@ jobs:
       # 'false' means an exit code 0
       - run: ./has_build_failed.sh
 
-      - run: ./run_nft.sh
+      # Run NFT for a max time
+      - run: timeout 10m ./run_nft.sh
+
 
       #- uses: r-lib/actions/setup-r@v2
 
