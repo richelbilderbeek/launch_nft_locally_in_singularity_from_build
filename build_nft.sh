@@ -13,7 +13,7 @@ then
   echo " "
   echo "Tip: Run:"
   echo " "
-  echo "  ./1_clone_repo.sh"
+  echo "  ./clone_repo.sh"
   echo " "
 fi
 
