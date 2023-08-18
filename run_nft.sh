@@ -49,6 +49,34 @@ then
   exit 42
 fi
 
+
+folder_name="../launch_nft_locally_in_singularity_from_dockerfile"
+if [ ! -d  ${folder_name} ]
+then
+  echo "ERROR: folder '${folder_name}' not found"
+  echo " "
+  echo "Tip: Run:"
+  echo " "
+  echo "  git clone https://github.com/richelbilderbeek/launch_nft_locally_in_singularity_from_dockerfile .."
+  echo " "
+fi
+
+filename="../launch_nft_locally_in_singularity_from_dockerfile/is_ssh_server_running.sh"
+if [ ! -f  ${filename} ]
+then
+  echo "ERROR: script file '${filename}' not found?"
+fi
+
+if [ $(bash "${filename}") -eq "0" ]
+then
+  echo "ERROR: ssh server is not running"
+  echo " "
+  echo "Tip: run:"
+  echo " "
+  echo "sudo apt install openssh-server"
+fi
+
+
 (
   cd nf-tower || exit 2
   make run
