@@ -25,10 +25,11 @@ jobs:
       # 'false' means an exit code 0
       - run: ./has_build_failed.sh
 
-      - name: Clone needed rep
+      - name: Clone needed repos
         run: |
           cd ..
           git clone https://github.com/richelbilderbeek/launch_nft_locally_in_singularity_from_dockerfile
+          git clone https://github.com/richelbilderbeek/nextflow_troubleshooting
           cd -
 
       - name: Run NFT for a max time
