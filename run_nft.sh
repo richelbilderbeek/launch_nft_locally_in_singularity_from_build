@@ -17,9 +17,10 @@ then
   echo " "
 fi
 
-if [ ! -d ../nextflow_troubleshooting ]
+folder_name="../nextflow_troubleshooting"
+if [ ! -d  ${folder_name} ]
 then
-  echo "ERROR: folder '../nextflow_troubleshooting' not found"
+  echo "ERROR: folder '${folder_name}' not found"
   echo " "
   echo "Tip: Run:"
   echo " "
@@ -27,7 +28,17 @@ then
   echo " "
 fi
 
-../nextflow_troubleshooting/scripts/fix_java_error.sh
+filename="../nextflow_troubleshooting/scripts/fix_java_error.sh"
+if [ ! -f  ${filename} ]
+then
+  echo "ERROR: script file '${filename}' not found?"
+fi
+
+source ${filename}
+
+echo "JAVA_HOME: ${JAVA_HOME}"
+echo "JAVA_CMD: ${JAVA_CMD}"
+
 
 (
   cd nf-tower || exit 2
