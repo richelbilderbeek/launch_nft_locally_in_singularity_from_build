@@ -20,10 +20,16 @@ by building the code from [nf-tower](https://github.com/seqeralabs/nf-tower).
 ./build_nft.sh
 ```
 
-## Success
+## 3. Run the NFT
 
 ```
-$ ./2_build_and_fail.sh 
+./run_nft.sh
+```
+
+## `build_nft.sh` success
+
+```
+$ build_nft.sh 
 
 ./gradlew assemble
 Downloading https://services.gradle.org/distributions/gradle-5.5.1-all.zip
@@ -290,4 +296,13 @@ Solution:
 
 ```
 sudo apt  install docker-compose
+```
+
+##
+
+```
+$ make run
+[...]
+backend_1   | Error: A JNI error has occurred, please check your installation and try again
+backend_1   | Exception in thread "main" java.lang.UnsupportedClassVersionError: io/seqera/tower/Application has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
 ```
