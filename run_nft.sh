@@ -34,12 +34,13 @@ then
   echo "ERROR: script file '${filename}' not found?"
 fi
 
-source ${filename}
+# shellcheck source=../nextflow_troubleshooting/scripts/fix_java_error.sh
+source "${filename}"
 
 echo "JAVA_HOME: ${JAVA_HOME}"
 echo "JAVA_CMD: ${JAVA_CMD}"
 
-if [ -z ${JAVA_HOME} ]
+if [ -z "${JAVA_HOME}" ]
 then
   echo "ERROR:  'JAVA_HOME' not found"
   echo " "
@@ -67,7 +68,8 @@ then
   echo "ERROR: script file '${filename}' not found?"
 fi
 
-if [ $(bash "${filename}") -eq "0" ]
+is_running=$(bash "${filename}")
+if [ "${is_running}" -eq "0" ]
 then
   echo "ERROR: ssh server is not running"
   echo " "
