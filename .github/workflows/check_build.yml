@@ -22,7 +22,8 @@ jobs:
 
       - run: ./build_nft.sh
 
-      - run: ./has_build_succeeded.sh
+      # 'false' means an exit code 0
+      - run: ./has_build_failed.sh
 
       #- uses: r-lib/actions/setup-r@v2
 
