@@ -70,7 +70,7 @@ fi
 
 
 filename="tower.yml"
-target_path="nf-tower/${filename}"
+target_path="nf-tower/tower-backend/${filename}"
 if [ ! -f  ${target_path} ]
 then
   cp "${filename}" "${target_path}"
