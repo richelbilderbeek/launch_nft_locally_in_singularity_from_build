@@ -68,6 +68,21 @@ then
   echo "ERROR: script file '${filename}' not found?"
 fi
 
+
+filename="tower.yml"
+target_path="nf-tower/${filename}"
+if [ ! -f  ${target_path} ]
+then
+  cp "${filename}" "${target_path}"
+else
+  echo "Configuration file '${filename}' already present at ${target_path}"
+fi
+
+if [ ! -f  ${target_path} ]
+then
+  echo "ERROR: configuration file '${filename}' still not found at ${target_path} ...?"
+fi
+
 is_running=$(bash "${filename}")
 if [ "${is_running}" -eq "0" ]
 then
