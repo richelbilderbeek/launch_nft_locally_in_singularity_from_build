@@ -73,7 +73,7 @@ then
 fi
 
 
-filename="tower.yml"
+filename="tower.env"
 target_path="nf-tower/tower-backend/${filename}"
 if [ ! -f  ${target_path} ]
 then
