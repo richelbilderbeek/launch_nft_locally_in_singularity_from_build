@@ -11,6 +11,11 @@ services:
     volumes:
       - $PWD:/work
     working_dir: /work
+    environment:
+        TOWER_SMTP_USER: richel
+        TOWER_SMTP_PASSWORD: iloverichel
+        TOWER_SMTP_HOST: localhost
+        TOWER_CONTACT_EMAIL: richel@richelbilderbeek.nl
 
   frontend:
     build: ./tower-web
