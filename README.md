@@ -44,6 +44,15 @@ to go to the 'Login email sent' screen.
 
 > The 'Login email sent' screen
 
+The console shows the following output, 
+with error `Could not connect to SMTP host: localhost, port: 587`:
+
+```
+backend_1   | 07:10:30.176 [Mailer thread] DEBUG i.s.t.service.mail.MailServiceImpl - Mail sent to=richel@richelbilderbeek.nl subject=Nextflow Tower Sign in
+backend_1   | 07:10:30.178 [Mailer thread] DEBUG io.seqera.mail.Mailer - Connecting to host=localhost port=587 user=richel
+backend_1   | 07:10:30.180 [Mailer thread] ERROR i.s.t.service.mail.MailServiceImpl - Unexpected error sending mail (await 4920750 ms) | Could not connect to SMTP host: localhost, port: 587
+```
+
 TODO:
 
  * Where is the email sent? What determines this? How to send it to a proper place?
