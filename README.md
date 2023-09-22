@@ -26,6 +26,31 @@ by building the code from [nf-tower](https://github.com/seqeralabs/nf-tower).
 ./run_nft.sh
 ```
 
+Then go to `http://localhost:8000/` to go to the NFT entry page. 
+Click 'Sign in' to go to the login screen.
+
+![](pics/before_sign_in.png)
+
+> The NFT entry page
+
+At the login screen, fill in your password and click 'Sign in'
+to go to the 'Login email sent' screen.
+
+![](pics/login.png)
+
+> The login screen
+
+![](pics/email_to_inbox.png)
+
+> The 'Login email sent' screen
+
+TODO:
+
+ * Where is the email sent? What determines this? How to send it to a proper place?
+
+
+## Appendix
+
 ## `build_nft.sh` success
 
 ```
