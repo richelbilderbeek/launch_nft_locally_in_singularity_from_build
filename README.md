@@ -56,9 +56,13 @@ After clicking the email, you are in NFT:
 
 ![](after_login.png)
 
-Problem is that there are no pipelines being executable:
+
+
+Problems is that there is no launchpad:
 
 ![](after_login_problems.png)
+
+See [NFT launchpad doc](https://help.tower.nf/22.2/launch/launchpad/).
 
 Also, how to get the credentials?
 
