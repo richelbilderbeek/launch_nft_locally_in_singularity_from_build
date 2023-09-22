@@ -18,5 +18,12 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
+      - name: Clone needed repos
+        run: |
+          cd ..
+          git clone https://github.com/richelbilderbeek/launch_nft_locally_in_singularity_from_dockerfile
+          git clone https://github.com/richelbilderbeek/nextflow_troubleshooting
+          cd -
+
       - name: Check bash scripts for style
         run: shellcheck -x *.sh
