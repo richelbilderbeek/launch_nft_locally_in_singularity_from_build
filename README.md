@@ -56,6 +56,29 @@ After clicking the email, you are in NFT:
 
 ![](after_login.png)
 
+Problem is that there are no pipelines being executable:
+
+![](after_login_problems.png)
+
+Also, how to get the credentials?
+
+```
+$ wget -qO- localhost:8000
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nextflow Tower</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="styles.399d41610a18b056efff.css"></head>
+<body>
+  <wt-main></wt-main>
+<script src="runtime.c51bd5b1c616d9ffddc1.js" defer></script><script src="polyfills-es5.fcebe5b129b20053787b.js" nomodule defer></script><script src="polyfills.f51d8f533e73eb84d944.js" defer></script><script src="scripts.beb850790cbf30a90c2b.js" defer></script><script src="main.80e4c4b5e614725316e2.js" defer></script></body>
+</html>
+```
 ## Notes
 
 State of the network:
