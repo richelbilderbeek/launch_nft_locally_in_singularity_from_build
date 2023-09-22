@@ -7,7 +7,7 @@
 #   ./run_nft.sh
 #
 
-if [ -z GITHUB_ACTIONS ]
+if [ -z ${GITHUB_ACTIONS} ]
 then
   echo "Running locally (i.e. not on GitHub Actions)"
 else
@@ -98,8 +98,9 @@ fi
 # Overwrite
 cp docker-compose.yml nf-tower/
 
-if [ -z GITHUB_ACTIONS ]
+if [ -z ${GITHUB_ACTIONS} ]
 then
+  echo "Running locally: add secret password"
   ./modify_docker_compose_smtp.sh
 fi
 
