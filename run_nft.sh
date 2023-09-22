@@ -7,6 +7,13 @@
 #   ./run_nft.sh
 #
 
+if [ -z GITHUB_ACTIONS ]
+then
+  echo "Running locally (i.e. not on GitHub Actions)"
+else
+  echo "Running on GitHub Actions"
+fi
+
 if [ ! -d nf-tower ]
 then
   echo "ERROR: folder 'nf-tower' not found"
@@ -91,7 +98,10 @@ fi
 # Overwrite
 cp docker-compose.yml nf-tower/
 
-./modify_docker_compose_smtp.sh
+if [ -z GITHUB_ACTIONS ]
+then
+  ./modify_docker_compose_smtp.sh
+fi
 
 filename="../launch_nft_locally_in_singularity_from_dockerfile/is_ssh_server_running.sh"
 is_running=$(bash "${filename}")
