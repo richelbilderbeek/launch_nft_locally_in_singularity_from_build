@@ -48,6 +48,18 @@ TODO:
 
  * Where is the email sent? What determines this? How to send it to a proper place?
 
+State of the network:
+
+```
+$ ./view_docker_network.sh
+
+NETWORK ID     NAME                DRIVER    SCOPE
+68fa2c9cfc22   bridge              bridge    local
+2466b50fc0f5   host                host      local
+7adff90eb5e6   nf-tower_backend    bridge    local
+d924a8a334e0   nf-tower_frontend   bridge    local
+ba5e9165ecb0   none                null      local
+```
 
 ## Appendix
 
@@ -323,7 +335,7 @@ Solution:
 sudo apt  install docker-compose
 ```
 
-##
+## Unknown error
 
 ```
 $ make run
