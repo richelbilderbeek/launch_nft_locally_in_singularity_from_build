@@ -38,5 +38,14 @@ jobs:
           git clone https://github.com/richelbilderbeek/nextflow_troubleshooting
           cd -
 
+
+      - name: Start timing
+        run: SECONDS=0
+
       - name: Run NFT for a max time
-        run: timeout 10m ./run_nft.sh
+        run: timeout 10m ./run_nft.sh || true
+
+      - name: Measure uptime
+        run: |
+          duration=$SECONDS
+          echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
