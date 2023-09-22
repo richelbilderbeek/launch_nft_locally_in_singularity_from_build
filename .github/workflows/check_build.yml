@@ -40,23 +40,3 @@ jobs:
 
       - name: Run NFT for a max time
         run: timeout 10m ./run_nft.sh
-
-
-      #- uses: r-lib/actions/setup-r@v2
-
-      #- name: Install dependencies
-      #  run: |
-      #    install.packages(c("remotes", "rcmdcheck", "stringr", "testthat"))
-      #  shell: Rscript {0}
-
-      #- run: ./2_update_gradle.sh
-
-      #- run: ./3_update_gradle_build.sh
-
-      #- run: ./4_update_backend_dockerfile.sh
-
-      #- run: ./997_build.sh
-
-      #- run: sudo docker image ls
-
-      # - run: ./998_run.sh
