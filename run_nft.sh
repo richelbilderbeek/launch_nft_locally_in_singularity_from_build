@@ -91,6 +91,8 @@ fi
 # Overwrite
 cp docker-compose.yml nf-tower/
 
+./modify_docker_compose_smtp.sh
+
 filename="../launch_nft_locally_in_singularity_from_dockerfile/is_ssh_server_running.sh"
 is_running=$(bash "${filename}")
 if [[ "${is_running}" -eq "0" ]]
