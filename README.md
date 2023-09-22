@@ -48,19 +48,17 @@ After login, an email is sent to you.
 
 In your inbox, you'll find an email. Click on the link
 
-![](email.png)
+![](pics/email.png)
 
 > The email one gets from Nextflow Tower
 
 After clicking the email, you are in NFT:
 
-![](after_login.png)
-
-
+![](pics/after_login.png)
 
 Problems is that there is no launchpad:
 
-![](after_login_problems.png)
+![](pics/after_login_problems.png)
 
 See [NFT launchpad doc](https://help.tower.nf/22.2/launch/launchpad/).
 
